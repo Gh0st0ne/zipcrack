@@ -47,12 +47,12 @@ cat /etc/issue.net
 
 
 echo "Checking dependencies configuration " 
-sleep 1
-if [[ "$(ping -c 1 8.8.8.8 | grep '100% packet loss' )" != "" ]]; then
+if nc -zw1 google.com 443; then
+  echo -e ${GREEN} "\n[ ✔ ] Internet.............${GREEN}[ working ]"
+  else
+  
   echo ${RED}"No Internet Connection"
   exit 1
-  else
-  echo -e ${GREEN} "\n[ ✔ ] Internet.............${GREEN}[ working ]"
 fi
 sleep 1
 which zip2john > /dev/null 2>&1
