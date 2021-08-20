@@ -234,7 +234,7 @@ echo -e ${YELLOW}"[*] Choose Cracking Type: "
 echo -e "  ${NC}[${CG}"1"${NC}]${CNC} Dictionary Attack"
 echo -e "  ${NC}[${CG}"2"${NC}]${CNC} Hash Attack"
 echo -e "  ${NC}[${CG}"3"${NC}]${CNC} BruteForce Attack"
-echo -e "  ${NC}[${CG}"3"${NC}]${CNC} Exit"
+echo -e "  ${NC}[${CG}"4"${NC}]${CNC} Exit"
 echo -n -e ${YELLOW}"\n[+] Select: "
         read redi_play
                 if [ $redi_play -eq 1 ]; then
