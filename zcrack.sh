@@ -61,7 +61,7 @@ echo -e ${GREEN} "\n[ ✔ ] zip2john.............${GREEN}[ found ]"
 else
 echo -e $red "[ X ] zip2john  -> ${RED}not found "
 echo -e ${YELLOW} "[ ! ] Installing zip2john "
-sudo apt-get install zip2john  > /dev/null 2>&1
+ apt-get install zip2john -y  > /dev/null 2>&1
 echo -e ${BLUE} "[ ✔ ] Done installing ...."
 fi
 sleep 1
@@ -71,7 +71,7 @@ echo -e ${GREEN} "\n[ ✔ ] john.............${GREEN}[ found ]"
 else
 echo -e $red "[ X ] john  -> ${RED}not found "
 echo -e ${YELLOW} "[ ! ] Installing john "
-sudo apt install john  > /dev/null 2>&1
+apt-get install john -y > /dev/null 2>&1
 
 echo -e ${BLUE} "[ ✔ ] Done installing ...."
 which john > /dev/null 2>&1
@@ -84,7 +84,7 @@ echo -e ${GREEN} "\n[ ✔ ] fcrackzip.............${GREEN}[ found ]"
 else
 echo -e $red "[ X ] fcrackzip  -> ${RED}not found "
 echo -e ${YELLOW} "[ ! ] Installing fcrackzip "
-sudo apt-get install fcrackzip  > /dev/null 2>&1
+apt-get install fcrackzip -y > /dev/null 2>&1
 echo -e ${BLUE} "[ ✔ ] Done installing ...."
 fi
 sleep 1
@@ -94,7 +94,7 @@ echo -e ${GREEN} "\n[ ✔ ] hashcat.............${GREEN}[ found ]"
 else
 echo -e $red "[ X ] hashcat  -> ${RED}not found "
 echo -e ${YELLOW} "[ ! ] Installing hashcat "
-sudo apt install hashcat  > /dev/null 2>&1
+apt-get install hashcat -y > /dev/null 2>&1
 
 echo -e ${BLUE} "[ ✔ ] Done installing ...."
 which hashcat > /dev/null 2>&1
