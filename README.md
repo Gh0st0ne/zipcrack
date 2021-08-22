@@ -7,6 +7,9 @@
     
 # Usage:
     sudo ./zcrack.sh
+    
+# Demo Video:
+https://www.youtube.com/watch?v=miEcCCVI4eM
 
 # Features:
      *: You Can Crack ZIP Password Protected Files Using Below Method:
